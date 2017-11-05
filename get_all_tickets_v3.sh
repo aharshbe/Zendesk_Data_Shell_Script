@@ -1,10 +1,11 @@
 #!/bin/bash
 
-#For the script to work, these fields need to be entered
+#For the script to work, these fields need to be entered 
+#e.g, where USER_NAME enter user email, etc.
 
-_user=$(USERDETAIL)
-_userPassword=$(USERDETAIL)
-_domain=$(ZENDESKDOMAIN)
+_user=USER_NAME
+_userPassword=USER_PASSWORD
+_domain=ZENDESK_DOMAIN
 
 #Make a data file is one doesn't exist
 
