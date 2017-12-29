@@ -7,14 +7,14 @@ _user=USER_NAME
 _userPassword=USER_PASSWORD
 _domain=ZENDESK_DOMAIN
 
-#Make a data file is one doesn't exist
+#Make a data file if one doesn't exist
 
 echo "|_ _|  _ \| ____/ _ \  | | | |"
 echo " | || | | |  _|| | | | | | | |"
 echo " | || |_| | |__| |_| | | |_| |"
 echo "|___|____/|_____\___/   \___/ "
 
-#Create new folder if it doesn't exist to place the data
+#Create new folder if it doesn't exist to store the data
 mkdir ./Data
 
 echo "Enter the date (yyyy-mm-dd): "
@@ -23,7 +23,7 @@ read ddate
 
 echo "Enter number of requests you'd like to make to Zendesk"
 echo "********"
-echo "-- Each request is worth 100 tickets --"
+echo "-- Each request returns 100 tickets --"
 echo "********"
 echo "If it's January choose 3 (start of the year)" 
 echo "If it's December choose 50 (end of the year)"
@@ -91,7 +91,7 @@ echo "*********"
 #Show file location for easy access
 echo "File located at: $(pwd all_tickets_2017-11-02_COMB.json)"
 echo "*********"
-echo "Would you like to open sqlify in your browser to convert to CSV? (Y/N)"
+echo "Would you like to open sqlify in your browser to convert JSON to CSV? (Y/N)"
 echo "********"
 
 read answer
